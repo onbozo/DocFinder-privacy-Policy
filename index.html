@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kebijakan Privasi — Document Finder</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+  :root {
+    --paper: #F7F3EC;
+    --surface: #FFFDF9;
+    --ink: #201D18;
+    --ink-secondary: #6F675A;
+    --hairline: #E7E0D2;
+    --accent: #32398A;
+    --accent-tint: #E6E7F5;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  header.doc-header {
+    margin-bottom: 48px;
+  }
+
+  .eyebrow {
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 12px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    margin: 0 0 16px;
+  }
+
+  .meta {
+    color: var(--ink-secondary);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .lede {
+    font-size: 17px;
+    color: var(--ink-secondary);
+    margin-top: 24px;
+    max-width: 60ch;
+  }
+
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin: 40px 0 56px;
+  }
+
+  nav.toc p {
+    margin: 0 0 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-secondary);
+  }
+
+  nav.toc ol {
+    margin: 0;
+    padding-left: 20px;
+    columns: 2;
+    column-gap: 24px;
+  }
+
+  nav.toc li {
+    margin-bottom: 8px;
+    break-inside: avoid;
+  }
+
+  nav.toc a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  nav.toc a:hover {
+    color: var(--accent);
+  }
+
+  section {
+    margin-bottom: 44px;
+    scroll-margin-top: 24px;
+  }
+
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .section-number {
+    color: var(--accent);
+    font-weight: 500;
+    margin-right: 4px;
+  }
+
+  h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 24px 0 8px;
+  }
+
+  p {
+    margin: 0 0 16px;
+    max-width: 68ch;
+  }
+
+  ul, ol.plain {
+    margin: 0 0 16px;
+    padding-left: 22px;
+    max-width: 68ch;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  a {
+    color: var(--accent);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 14px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+  }
+
+  th {
+    color: var(--ink-secondary);
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .callout {
+    background: var(--accent-tint);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 14px;
+    color: var(--ink);
+    margin: 0 0 16px;
+  }
+
+  .callout strong {
+    color: var(--accent);
+  }
+
+  .placeholder {
+    background: #FCE9C9;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 0.95em;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--hairline);
+    color: var(--ink-secondary);
+    font-size: 13px;
+  }
+
+  @media (max-width: 520px) {
+    .page { padding: 40px 20px 72px; }
+    h1 { font-size: 28px; }
+    nav.toc ol { columns: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="doc-header">
+    <p class="eyebrow">Document Finder</p>
+    <h1>Kebijakan Privasi</h1>
+    <p class="meta">Berlaku efektif: <span class="placeholder">01 October 2026</span> · Versi <span class="placeholder">[1.0]</span></p>
+    <p class="lede">Halaman ini menjelaskan data apa yang diproses Document Finder, bagaimana data itu digunakan, dan pilihan yang kamu miliki. Kami menulisnya sejelas mungkin — kalau ada istilah yang membingungkan, hubungi kami lewat kontak di bagian bawah.</p>
+  </header>
+
+  <nav class="toc">
+    <p>Daftar Isi</p>
+    <ol>
+      <li><a href="#ringkasan">Ringkasan Singkat</a></li>
+      <li><a href="#data-yang-diproses">Data yang Diproses</a></li>
+      <li><a href="#pemrosesan-on-device">Pemrosesan di Perangkat</a></li>
+      <li><a href="#izin-aplikasi">Izin Aplikasi</a></li>
+      <li><a href="#layanan-pihak-ketiga">Layanan Pihak Ketiga</a></li>
+      <li><a href="#penyimpanan-dan-retensi">Penyimpanan &amp; Retensi</a></li>
+      <li><a href="#keamanan">Keamanan</a></li>
+      <li><a href="#hak-pengguna">Hak &amp; Pilihan Kamu</a></li>
+      <li><a href="#dokumen-pihak-ketiga">Dokumen Berisi Data Orang Lain</a></li>
+      <li><a href="#anak-anak">Privasi Anak</a></li>
+      <li><a href="#pengguna-internasional">Pengguna Internasional</a></li>
+      <li><a href="#perubahan-kebijakan">Perubahan Kebijakan Ini</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ol>
+  </nav>
+
+  <section id="ringkasan">
+    <h2><span class="section-number">1.</span>Ringkasan Singkat</h2>
+    <div class="callout">
+      <strong>Inti kebijakan ini:</strong> dokumen yang kamu simpan di Document Finder — foto KTP, STNK, invoice, dan lainnya — diproses dan disimpan <strong>di perangkatmu sendiri</strong>. Kami tidak mengunggah isi dokumenmu ke server kami, dan tidak menjualnya ke pihak lain.
+    </div>
+    <p>Yang tetap perlu kamu tahu: aplikasi ini menampilkan iklan (lewat Google AdMob) dan sebagian fitur menggunakan layanan Google Play (ML Kit) yang berjalan sebagian di perangkat dan bisa mengunduh model kecil saat pertama kali dipakai. Detail lengkapnya ada di bagian-bagian berikut.</p>
+  </section>
+
+  <section id="data-yang-diproses">
+    <h2><span class="section-number">2.</span>Data yang Diproses</h2>
+
+    <h3>Dokumen yang kamu simpan</h3>
+    <p>Foto, hasil scan, dan file PDF yang kamu tambahkan ke Document Finder — beserta teks yang dibaca dari dokumen tersebut (hasil OCR), kategori, dan informasi yang diekstrak (misalnya nomor polisi atau tanggal masa berlaku) — disimpan di penyimpanan privat aplikasi pada perangkatmu. Kami di <span class="placeholder">[Nama Pengembang]</span> tidak memiliki akses ke data ini kecuali kamu secara aktif membagikannya keluar aplikasi (misalnya lewat fitur "Bagikan" atau ekspor cadangan).</p>
+
+    <h3>Data teknis minimal</h3>
+    <table>
+      <tr><th>Jenis data</th><th>Alasan dikumpulkan</th></tr>
+      <tr><td>Advertising ID</td><td>Dipakai oleh Google AdMob untuk menampilkan dan mengukur iklan (lihat bagian 5)</td></tr>
+      <tr><td>Data crash / performa dasar</td><td>Dikumpulkan Google Play secara standar untuk semua aplikasi Android, membantu kami memperbaiki bug</td></tr>
+    </table>
+
+    <h3>Yang TIDAK kami kumpulkan</h3>
+    <ul>
+      <li>Kami tidak meminta kamu membuat akun atau login — tidak ada nama, email, atau nomor telepon yang kami kumpulkan untuk keperluan aplikasi ini.</li>
+      <li>Kami tidak mengunggah foto dokumen, hasil OCR, atau informasi yang diekstrak ke server kami.</li>
+      <li>Kami tidak menjual data pengguna kepada pihak ketiga mana pun.</li>
+    </ul>
+  </section>
+
+  <section id="pemrosesan-on-device">
+    <h2><span class="section-number">3.</span>Pemrosesan di Perangkat</h2>
+    <p>Document Finder dirancang dengan prinsip <em>privacy-first</em>: pembacaan teks dari dokumen (OCR), deteksi kategori, dan pencarian semuanya berjalan langsung di perangkatmu, menggunakan Google ML Kit dan Gemini Nano (bila didukung perangkat). Proses ini tidak mengirim isi dokumenmu ke internet.</p>
+    <p>Untuk fitur tertentu (pengenalan teks bahasa Mandarin/Jepang/Korea/Devanagari, dan pencarian pintar "Tanya Dokumen"), aplikasi mungkin mengunduh model kecil dari Google Play services saat pertama kali diaktifkan. Unduhan ini hanya berisi model AI, bukan data dokumenmu.</p>
+  </section>
+
+  <section id="izin-aplikasi">
+    <h2><span class="section-number">4.</span>Izin Aplikasi</h2>
+    <table>
+      <tr><th>Izin</th><th>Untuk apa</th></tr>
+      <tr><td>Kamera</td><td>Mengambil foto dokumen saat kamu memilih fitur pindai</td></tr>
+      <tr><td>Biometrik / kunci layar</td><td>Fitur kunci aplikasi opsional — verifikasi dilakukan oleh sistem Android, kami tidak menyimpan data sidik jari/wajahmu</td></tr>
+      <tr><td>Notifikasi</td><td>Mengirim pengingat masa berlaku dokumen yang kamu aktifkan sendiri</td></tr>
+      <tr><td>Akses file (Storage Access Framework)</td><td>Mengimpor foto/PDF/folder yang kamu pilih secara eksplisit — aplikasi tidak menjelajahi penyimpananmu tanpa izin per-aksi</td></tr>
+    </table>
+  </section>
+
+  <section id="layanan-pihak-ketiga">
+    <h2><span class="section-number">5.</span>Layanan Pihak Ketiga</h2>
+
+    <h3>Google AdMob</h3>
+    <p>Kami menampilkan iklan lewat Google AdMob untuk mendanai pengembangan aplikasi ini secara gratis. AdMob dapat mengumpulkan advertising ID dan data teknis perangkat untuk menayangkan dan mengukur iklan, sesuai <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>. Kamu bisa membatasi iklan personalisasi lewat pengaturan iklan di perangkat Android-mu (Setelan &gt; Google &gt; Iklan).</p>
+
+    <h3>Google Play services / ML Kit</h3>
+    <p>Fitur pemindaian dokumen, OCR, dan pencarian pintar menggunakan Google ML Kit yang berjalan lewat Google Play services. Sebagian model diunduh dan dijalankan di perangkat; proses ini tunduk pada <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>.</p>
+
+    <h3>Tempat penyimpanan cadangan (backup)</h3>
+    <p>Fitur ekspor cadangan membuat file terenkripsi dengan password yang kamu tentukan sendiri. File ini disimpan ke lokasi yang kamu pilih (misalnya folder lokal atau Google Drive lewat pemilih file Android) — kami tidak memiliki akses ke file cadangan ini, dan kami tidak menyimpan salinannya.</p>
+  </section>
+
+  <section id="penyimpanan-dan-retensi">
+    <h2><span class="section-number">6.</span>Penyimpanan &amp; Retensi</h2>
+    <ul>
+      <li>Dokumen tersimpan di perangkatmu selama kamu tidak menghapusnya.</li>
+      <li>Dokumen yang dihapus dipindahkan ke Tempat Sampah dan dihapus permanen otomatis setelah <strong>30 hari</strong>, atau bisa dihapus permanen kapan saja secara manual.</li>
+      <li>Meng-uninstall aplikasi menghapus seluruh data aplikasi dari perangkat (kecuali file cadangan yang sudah kamu ekspor ke lokasi lain).</li>
+    </ul>
+  </section>
+
+  <section id="keamanan">
+    <h2><span class="section-number">7.</span>Keamanan</h2>
+    <ul>
+      <li>Dokumen disimpan di penyimpanan privat aplikasi (app-private storage), tidak dapat diakses aplikasi lain di perangkatmu.</li>
+      <li>Kunci aplikasi opsional menggunakan sistem biometrik/PIN Android (Android Keystore) — kami tidak pernah menerima atau menyimpan data biometrikmu.</li>
+      <li>File cadangan dienkripsi AES-256 dengan password yang hanya kamu ketahui. Kalau password ini hilang, file cadangan tidak dapat dipulihkan oleh siapa pun, termasuk kami.</li>
+    </ul>
+  </section>
+
+  <section id="hak-pengguna">
+    <h2><span class="section-number">8.</span>Hak &amp; Pilihan Kamu</h2>
+    <p>Karena data dokumenmu tersimpan di perangkat, kamu memegang kendali penuh atas data itu:</p>
+    <ul>
+      <li><strong>Akses &amp; koreksi</strong> — buka, edit judul/kategori/informasi dokumen kapan saja lewat aplikasi.</li>
+      <li><strong>Penghapusan</strong> — hapus dokumen individual, atau hapus seluruh data dengan meng-uninstall aplikasi.</li>
+      <li><strong>Portabilitas</strong> — ekspor seluruh koleksi dokumenmu lewat fitur cadangan terenkripsi.</li>
+      <li><strong>Kontrol iklan</strong> — atur preferensi iklan personalisasi lewat pengaturan Android.</li>
+    </ul>
+  </section>
+
+  <section id="dokumen-pihak-ketiga">
+    <h2><span class="section-number">9.</span>Dokumen Berisi Data Orang Lain</h2>
+    <p>Beberapa dokumen yang kamu simpan (misalnya Kartu Keluarga) mungkin berisi data pribadi anggota keluarga atau pihak lain. Kamu bertanggung jawab memastikan kamu berhak menyimpan dan mengelola dokumen tersebut. Karena semua data ini tersimpan lokal di perangkatmu dan tidak kami akses, kami tidak memproses data pihak ketiga ini atas nama kami sendiri.</p>
+  </section>
+
+  <section id="anak-anak">
+    <h2><span class="section-number">10.</span>Privasi Anak</h2>
+    <p>Document Finder tidak ditujukan untuk digunakan langsung oleh anak-anak di bawah 13 tahun, dan kami tidak secara sadar mengumpulkan data pribadi dari anak-anak. Aplikasi ini dirancang untuk pengelolaan dokumen dewasa/keluarga oleh pengguna dewasa.</p>
+  </section>
+
+  <section id="pengguna-internasional">
+    <h2><span class="section-number">11.</span>Pengguna Internasional</h2>
+    <p>Document Finder tersedia dalam beberapa bahasa dan digunakan di berbagai negara. Karena pemrosesan data utama terjadi di perangkatmu sendiri (bukan di server kami), transfer data lintas negara untuk isi dokumenmu pada dasarnya tidak terjadi. Untuk data terbatas yang diproses pihak ketiga (AdMob, Google Play services), berlaku kebijakan privasi masing-masing penyedia sebagaimana dirujuk di atas.</p>
+    <p>Bagi pengguna di Uni Eropa/EEA (GDPR) atau California (CCPA), kamu tetap memiliki hak atas data sebagaimana diuraikan di bagian 8 di atas. Untuk permintaan formal terkait hak ini, hubungi kami lewat kontak di bagian bawah.</p>
+  </section>
+
+  <section id="perubahan-kebijakan">
+    <h2><span class="section-number">12.</span>Perubahan Kebijakan Ini</h2>
+    <p>Kami dapat memperbarui kebijakan ini dari waktu ke waktu, misalnya saat menambah fitur baru. Perubahan signifikan akan ditandai lewat pembaruan tanggal "Berlaku efektif" di atas, dan bila memungkinkan, diberi tahu di dalam aplikasi.</p>
+  </section>
+
+  <section id="kontak">
+    <h2><span class="section-number">13.</span>Kontak</h2>
+    <p>Ada pertanyaan soal privasi atau ingin mengajukan permintaan terkait datamu? Hubungi kami:</p>
+    <p>
+      Email: <span class="placeholder">onbozo.dev@gmail.com</span><br>
+      Pengembang: <span class="placeholder"> Onbozo </span>
+    </p>
+  </section>
+
+  <footer>
+    <p><strong>Catatan:</strong> Dokumen ini adalah templat awal, bukan nasihat hukum. Sebelum dipublikasikan, sebaiknya ditinjau oleh profesional hukum untuk memastikan kepatuhan terhadap regulasi yang berlaku di wilayah tempat aplikasi ini dirilis (termasuk kebijakan Google Play Developer Program dan, bila relevan, GDPR/CCPA).</p>
+  </footer>
+
+</div>
+</body>
+</html>
